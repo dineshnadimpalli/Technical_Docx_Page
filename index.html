@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Plain Tech Documentation </title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <nav id="navbar" class="sidenav">
+  <header>Java Documentation</header>
+  <ul> 
+    <a class="nav-link" href="#Overview" rel="internal"><li>Overview</li></a>
+    <a class="nav-link" href="#Environment_Setup" rel="internal"><li>Environment Setup</li></a>
+    <a class="nav-link" href="#Objects_&_Classes" rel="internal"><li>Objects & Classes</li></a>
+    <a class="nav-link" href="#Basic_Datatypes" rel="internal"><li>Basic Datatypes</li></a>
+    <a class="nav-link" href="#Variable_Types" rel="internal"><li>Variable Types</li></a>
+    <a class="nav-link" href="#Modifier_Types" rel="internal"><li>Modifier Types</li></a>
+    <a class="nav-link" href="#Basic_Operators" rel="internal"><li>Basic Operators</li></a>
+    <a class="nav-link" href="#Loop_Control" rel="internal"><li>Loop Control</li></a>
+    <a class="nav-link" href="#Decision_Making" rel="internal"><li>Decision Making</li></a>
+    <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Overview">
+    <header>Overview</header>
+      <article>
+        <p>Java programming language was originally developed by Sun Microsystems which was initiated by James Gosling and released in 1995 as core component of Sun Microsystems' Java platform (Java 1.0 [J2SE]).</p>
+        
+        <p>The latest release of the Java Standard Edition is Java SE 8. With the advancement of Java and its widespread popularity, multiple configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.</p>
+
+         <p>The new J2 versions were renamed as Java SE, Java EE, and Java ME respectively. Java is guaranteed to be Write Once, Run Anywhere.</p>
+        <ul>
+        <li>Object Oriented − In Java, everything is an Object. Java can be easily extended since it is based on the Object model.</li>
+          <li>Platform Independent − Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.</li>
+          </ul>    
+      </article>
+
+  </section>
+    <section class="main-section" id="Environment_Setup">
+    <header>Environment Setup</header>
+      <article>
+        <p>If you are still willing to set up your environment for Java programming language, then this section guides you on how to download and set up Java on your machine. Following are the steps to set up the environment.</p>
+        <code>public class MyFirstJavaProgram {
+                 public static void main(String []args) {
+                    System.out.println("Hello World"); 
+                }
+              }</code>
+
+        <p>Follow the instructions to download Java and run the .exe to install Java on your machine. Once you installed Java on your machine, you will need to set environment variables to point to correct installation directories.
+        </p>
+        <ul>
+          <li>Right-click on 'My Computer' and select 'Properties'.</li>
+
+<li>Click the 'Environment variables' button under the 'Advanced' tab.</li>
+
+<li>Now, alter the 'Path' variable so that it also contains the path to the Java executable. Example, if the path is currently set to 'C:\WINDOWS\SYSTEM32', then change your path to read 'C:\WINDOWS\SYSTEM32;c:\Program Files\java\jdk\bin'.</li>
+        </ul>
+      </article>
+  </section>
+  
+  <section class="main-section" id="Objects_&_Classes">
+    <header>Objects & Classes</header>
+      <article>
+        <p>A variable provides us with named storage that our programs can manipulate. Each variable in Java has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.</p>
+        <ul>
+          <li>Arithmetic Operators</li>
+<li>Relational Operators</li>
+<li>Bitwise Operators</li>
+<li>Logical Operators</li>
+<li>Assignment Operators</li>
+<li>Misc Operators</li>
+        </ul>
+      </article>
+  </section>
+  
+  <section class="main-section" id="Basic_Datatypes">
+    <header>Basic Datatypes</header>
+      <article>
+        <p>When we consider a Java program, it can be defined as a collection of objects that communicate via invoking each other's methods. Let us now briefly look into what do class, object, methods, and instance variables mean.</p>
+        <p>Let us look at a simple code that will print the words Hello World.</p>
+        <code>public class MyFirstJavaProgram {
+                 public static void main(String []args) {
+                    System.out.println("Hello World"); 
+                }
+              }</code>
+      </article>
+  </section>
+  
+  <section class="main-section" id="Variable_Types">
+    <header>Variable Types</header>
+      <article>
+        <p>Let us now look deep into what are objects. If we consider the real-world, we can find many objects around us, cars, dogs, humans, etc. All these objects have a state and a behavior.</p>
+        <code>public class MyFirstJavaProgram {
+                 public static void main(String []args) {
+                    System.out.println("Hello World"); 
+                }
+              }</code>
+
+<p>If we consider a dog, then its state is - name, breed, color, and the behavior is - barking, wagging the tail, running.</p>
+
+<p>If you compare the software object with a real-world object, they have very similar characteristics.</p>
+
+<p>Software objects also have a state and a behavior. A software object's state is stored in fields and behavior is shown via methods.</p>
+
+<p>So in software development, methods operate on the internal state of an object and the object-to-object communication is done via methods.</p>
+        <code>public class Dog {
+   String breed;
+   int age;
+   String color;
+
+   void barking() {
+   }
+
+   void hungry() {
+   }
+
+   void sleeping() {
+   }
+}</code>
+      </article>
+  </section>
+  
+  <section class="main-section" id="Modifier_Types">
+    <header>Modifier Types</header>
+      <article>
+        <p>Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in the memory.</p>
+
+<p>Based on the data type of a variable, the operating system allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals, or characters in these variables.</p>
+        <ul>
+          <li>Byte data type is an 8-bit signed two's complement integer</li>
+
+<li>Minimum value is -128 (-2^7)</li>
+
+<li>Maximum value is 127 (inclusive)(2^7 -1)</li>
+
+<li>Default value is 0</li>
+
+<li>Byte data type is used to save space in large arrays, mainly in place of integers, since a byte is four times smaller than an integer.</li>
+
+<li>Example: byte a = 100, byte b = -50</li>
+          
+        </ul>
+        
+      </article>
+  </section>
+  
+  <section class="main-section" id="Basic_Operators">
+    <header>Basic Operators</header>
+      <article>
+        <p>Java defines several bitwise operators, which can be applied to the integer types, long, int, short, char, and byte.</p>
+
+<p>Bitwise operator works on bits and performs bit-by-bit operation. Assume if a = 60 and b = 13; now in binary format they will be as follows −</p>
+
+<p>a = 0011 1100</p>
+
+<p>b = 0000 1101</p>
+
+<p>-----------------</p>
+
+<p>a&b = 0000 1100</p>
+
+<p>a|b = 0011 1101</p>
+
+<p>a^b = 0011 0001</p>
+
+<p>~a  = 1100 0011</p>
+      </article>
+  </section>
+  
+  <section class="main-section" id="Loop_Control">
+    <header>Loop Control</header>
+      <article>
+        <p>There may be a situation when you need to execute a block of code several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.</p>
+
+<p>Programming languages provide various control structures that allow for more complicated execution paths.</p>
+
+<p>A loop statement allows us to execute a statement or group of statements multiple times and following is the general form of a loop statement in most of the programming languages</p>
+      </article>
+  </section>
+  
+  <section class="main-section" id="Decision_Making">
+    <header>Decision Making</header>
+      <article>
+        <code>public class Test {
+
+   public static void main(String args[]) {
+      int [] numbers = {10, 20, 30, 40, 50};
+
+      for(int x : numbers ) {
+         System.out.print( x );
+         System.out.print(",");
+      }
+      System.out.print("\n");
+      String [] names = {"James", "Larry", "Tom", "Lacy"};
+
+      for( String name : names ) {
+         System.out.print( name );
+         System.out.print(",");
+      }
+   }
+}</code>
+      </article>
+  </section>
+  
+  
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+      <article>
+        <li>The Documentation is done based on the resources provided by <a href="https://www.tutorialspoint.com/java/" target="_blank">Tutorials Point</a></li>
+      </article>
+  </section>
+  
+  
+  <p class="signature">A Pen by <a href="https://codepen.io/dashboard/">Dinesh Nadimaplli</a></p>
+</main>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+</body>
+
+</html>
